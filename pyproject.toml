@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mgt3500"
+version = "0.2.0"
+description = "Supervised and unsupervised data mining functions for MGT 3500"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.1",
+    "apyori",
+    "kneed",
+    "scipy",
+    "numpy",
+    "matplotlib",
+    "statsmodels",
+    "scikit-learn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
